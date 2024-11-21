@@ -19,6 +19,15 @@ public class KPO {
         
         String gep = "semmi";
         int geprandom = (int)(Math.random() * 3) + 1;
+        /*
+        itt lehetne úgy tesztelni a kódot, hogy a randomszámgenerálás után,
+        szándékosan beállítjuk egy tesztelendő számra az értékét, és így azzal
+        dolgozik tovább a program.
+        
+        Például:
+        geprandom = 1;
+        
+        */
         if(geprandom == 1) {gep = "ko";}
         if(geprandom == 2) {gep = "papir";}
         if(geprandom == 3) {gep = "ollo";}
