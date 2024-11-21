@@ -3,18 +3,21 @@ package jatek;
 import java.util.Scanner;
 
 public class KPO {
+    
+    public static String scantrim() {
+        Scanner sc = new Scanner(System.in);
+        String in = sc.nextLine();
+        in = in.trim();
+        return in;
+    }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        
         System.out.println("ko, papir vagy ollo: ");
-        String input = scanner.nextLine();
-        input = input.trim();
+        String input = scantrim();
         
         while(!input.equals("ko") && !input.equals("papir") && !input.equals("ollo")) {
             System.out.println("HIBA!  ko, papir vagy ollo: ");
-            input = scanner.nextLine();
-            input = input.trim();
+            input = scantrim();
         }
         
         String gep = "semmi";
